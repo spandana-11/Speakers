@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgba(136, 206, 229, 0.53);
+
+}
+.speaker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -2px 3px  white,
+  1px 2px 3px black;
+}
+.actions_div {
+  width: 200px;
+  height: 200px;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top_btn,
+.btm_btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+button {
+  /* text-align: center; */
+  background-color:lightblue;
+  /* border: 1px solid #2980b9; */
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  /* text-align: left; */
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: -1px -2px 3px  white,
+    1px 2px 3px black;
+  transition: box-shadow 0.2s ease-in-out;
+}
+button:hover {
+  box-shadow:inset -1px -2px 3px  white,
+   inset 1px 2px 3px black;
+}
+p{
+  text-wrap: nowrap;
+  padding: 0 5px;
+  animation:text 10s linear infinite;
+}
+.anim{
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 75px;
+  /* overflow-x:auto; */
+  /* background-color: white; */
+  overflow: hidden;
+ 
+
+}
+@keyframes text{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-150px);
+    
+  }
+}
